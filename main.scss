@@ -1,0 +1,121 @@
+@import 'mountains';
+@import 'moon';
+@import 'stars';
+
+@font-face {
+    font-family: cicle;
+    src: url(fonts/Cicle-Fina.ttf);
+}
+
+@font-face {
+    font-family: ostrich;
+    src: url(fonts/OstrichSans-Bold.otf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+	overflow: hidden;
+	font-family: cicle;
+}
+
+a {
+	color: #ca7f81;
+}
+
+a:hover {
+	color: #bda1a1;
+}
+
+a:visited {
+	color: #bda1a1;
+}
+
+h1 {
+	font-size: 55px;	
+}
+
+h3 {
+	font-size: 23px;	
+}
+
+p {
+	font-size: 17px;
+}
+
+.bg {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: linear-gradient(#534b7e, #62719c, #97bdd4);
+	z-index: -100;
+}
+
+.black-overlay {
+	width: 400px;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	position:absolute;
+	left: 33%;
+	top: 18%;
+	padding: 25px;
+	z-index: 100;
+	color: #dbdcf0;
+	border-radius: 15px;
+	padding-left: 30px;
+
+	h1 {
+		margin: 0px;
+		font-family: ostrich;
+		font-weight: lighter;
+	}
+
+	h3 {
+		margin-top: 3px;
+		margin-bottom: 20px;
+	}
+
+	.content {
+		margin-left: 10px;
+
+		p {
+			margin: 0px;
+			margin-bottom: 10px;
+		}
+
+		.contact {
+			float: right;
+			margin-top: 10px;
+
+			i {
+				font-size:1.8em;
+				color: #dcdef2;
+				margin: 0 7px;
+			}
+
+			i:hover {
+				color: #bda1a1;
+			}
+		}
+	}
+}
+
+.home {
+	position: absolute;
+	left: 85%;
+	bottom: -2px;
+	z-index: 100;
+}
+
+.cabin {
+	margin-right: 10px;
+	height: 65px;
+	width: auto;
+}
+
+.flag {
+	height: 75px;
+}

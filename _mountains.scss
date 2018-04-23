@@ -1,0 +1,123 @@
+$m-base: #bd9677;
+$m-top: #bdafa1;
+
+$m2-base: #ca7f81;
+$m2-top: #bda1a1;
+
+$m3-base: #77bd8e;
+$m3-top: #a1bdac;
+
+$m4-base: #a069a1;
+$m4-top: #bca1bd;
+
+.mountain {
+	position: absolute;
+	bottom: 0;
+	border-left: 250px solid transparent;
+	border-right: 250px solid transparent;
+	z-index: 1;
+
+	.mountain-top {
+	    position: absolute;
+	    right: -100px;
+	    border-left: 100px solid transparent;
+	    border-right: 100px solid transparent;
+	    z-index: 2;
+	}
+
+    .mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+	    position: absolute;
+	    top: 110px;
+	    border-left: 35px solid transparent;
+	    border-right: 35px solid transparent;
+	}
+
+	.mountain-cap-1 { left: -100px; }
+	.mountain-cap-2 { left: -35px; }
+	.mountain-cap-3 { left: 30px; }
+
+	&.mountain-v1 {
+		border-bottom: 280px solid $m-base;
+	
+		.mountain-top {
+			border-bottom: 110px solid $m-top;
+		}
+
+		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+			border-top: 35px solid $m-top;
+		}
+	}
+
+	&.mountain-v1--2 {
+		opacity: 0.2;
+		left: 870px;
+		bottom: 0px;
+		z-index: -1;
+	}
+
+	&.mountain-v2 {
+		border-bottom: 290px solid $m2-base;
+		left: 700px;
+		bottom: -30px;
+
+		.mountain-top {
+	    	border-bottom: 115px solid $m2-top;
+		}
+
+		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+			top: 115px;
+			border-top: 35px solid $m2-top;
+		}
+	}
+
+	&.mountain-v2--2 {
+		opacity: 0.4;
+		left: 180px;
+		bottom: -15px;
+		z-index: -1;
+	}
+
+	&.mountain-v3 {
+		border-bottom: 310px solid $m3-base;
+		left: 350px;
+		z-index: -1;
+
+		.mountain-top {
+	    	border-bottom: 120px solid $m3-top;
+		}
+
+		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+			top: 120px;
+			border-top: 35px solid $m3-top;
+		}
+	}
+
+	&.mountain-v3--2 {
+		opacity: 0.6;
+		left: -200px;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	&.mountain-v4 {
+		border-bottom: 260px solid $m4-base;
+		left: 1050px;
+		z-index: 2;
+
+		.mountain-top {
+	    	border-bottom: 105px solid $m4-top;
+		}
+
+		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+			top: 105px;
+			border-top: 35px solid $m4-top;
+		}
+	}
+
+	&.mountain-v4--2 {
+		opacity: 0.6;
+		left: 550px;
+		bottom: 0;
+		z-index: -5;
+	}
+}

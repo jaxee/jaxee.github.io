@@ -1,496 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="main.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Jackie Ellis</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  </head>
+  <body>
+  	<div class="bg">
+  		<div class="stars"></div>
+  		<div class="stars flip"></div>
+  		<div class="stars move"></div>
+			<div class="twinkling"></div>
+  		<div class="black-overlay">
+  			<h1> Jackie Ellis </h1>
+  			<div class="content">
+	  			<h3> <i> Software Developer </i> </h3>
+	  			<p> Works at <a href="https://www.shopify.ca/" target="_blank">Shopify</a> in Toronto, Ontario. </p>
+	  			<p> Passionate about UX; writing amazing code is great but pointless if no one can use it.</p>
 
-		<!-- jQuery -->
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  			<div class="contact">
+			  			<a href="https://www.linkedin.com/in/jaclynellis/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			  			<a href="https://twitter.com/j4xee" target="_blank"><i class="fab fa-twitter"></i></a>
+			  			<a href="https://github.com/jaxee" target="_blank"><i class="fab fa-github-alt"></i></a>
+	  			</div>
+	  		</div>
+  		</div>
 
-		<!-- favicon -->
-		<link rel="icon" type="image/png" href="images/favicon.ico" />
-
-		<!-- scrolling script -->
-		<script src="scripts/scroll.js"></script>
-
-		<!-- modal -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-
-		<!-- c3 css -->
-		<link href="scripts/c3.css" rel="stylesheet">
-
-		<!-- chart -->
-		<script src="//d3js.org/d3.v3.min.js"></script>
-		<script src="scripts/c3.min.js"></script>
-
-		<!-- font awesome -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-		<title>Jackie Ellis</title>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="navigation">
-				<a href="#n_contact"> Contact </a>
-				<a href="#n_projects"> Projects </a>
-				<a href="#n_hackathons"> Hackathons </a>
-				<a href="#n_about"> About </a>
+			<div class="moon">
+				<div class="moon-overlay"></div>
 			</div>
-			<section id="home">
-				<div class="mainIntro">
-					<img class="logo" src="images/logo.png" />
-					<h1>JACKIE ELLIS</h1>
-					<a type="button" href="https://www.linkedin.com/in/jaclynellis/" value="LinkedIn" target="_blank" class="btn">LinkedIn</a>
 
-					<a type="button" href="https://github.com/jaxee" value="GitHub" target="_blank" class="btn">GitHub</a>
-				</div>
-			</section>
-			<section id="n_about">
-				<h2> About Me </h2>
-				<div class="aboutChoices">
-					<a type="button" id="jackieBtn" class="btn-blue">Jackie</a>
-					<a type="button" id="educationBtn" class="btn-blue">Education</a>
-					<a type="button" id="experienceBtn" class="btn-blue">Experience</a>
-					<a type="button" id="skillsBtn" class="btn-blue">Skills</a>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-xs-offset-2">
-						<div id="aboutMeChart"></div>
-					</div>
-					<div class="col-md-6">
-						<div class="aboutMeExtraInfo">
-							<div class="about_jackie">
-								<h3> Hello! I'm Jackie </h3>
-								<p> I would describe myself as a developer who <span class="active">really</span> cares about user experience. </p>
-								<p> Explore more about me by clicking the buttons above! </p>
-							</div>
-							<div class="about_education">
-								<h3> Education </h3>
-								<p> Bachelor of Information Technology in Interactive Multimedia and Design (BIT) </p>
-								<p>  Minor in Computer Science at Carleton University </p>
-								<p> Expected Graduation: April 2018 </p>
-							</div>
-
-							<div class="about_experience">
-								<h3> Experience </h3>
-
-								<div class="row">
-									<div class="col-md-6">
-										<img src="images/Shopify_Logo.png" />
-										<p> Frontend Developer Intern </p>
-										<p> May - August 2017 </p>
-										<br />
-										<img src="images/kx_logo.png" />
-										<p> Software Devleoper </p>
-										<p> September - December 2016 </p>
-									</div>
-									<div class="col-md-6">
-										<img src="images/blackberry_logo.png" />
-										<p> Multimedia Developer </p>
-										<p> May - August 2016 </p>
-										<br />
-										<img src="images/Statistics_Canada_logo.png" />
-										<p> User Experience Team </p>
-										<p> May - August 2015 </p>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="about_skills">
-								<h3> Skills </h3>
-								<p> I code best with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-music" aria-hidden="true"></i>  </p>
-								<p> Check out some of my work on Github <a href="https://github.com/jaxee" target="_blank"><img src="images/github_logo.png" class="githubLogo" /> </a> </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="n_hackathons">
-				<h2> Hackathons </h2>
-				<div class="row">
-					<div class="col-md-10 col-xs-offset-1">
-						<div class="row">
-							<div class="col-md-6 hackathon">
-								<img src="images/hack_decode.png" class="sectionIcon" />
-								<p class="hackathonTitle"> deCODE Ottawa 2017 <br/>United Nations Goal 14 - Qlik Challenge</p>
-								<p class="hackathonDesc">Visualize the commitments that various countries made in accordance to the United Nations SDG 14 #saveourocean movement using the Qlik API.</p>
-								<p class="hackathonLink"><a href="https://github.com/QlikHackathon/decode-oct-2017" target="_blank">Github</a> | <a href="https://qlik-decode-un.herokuapp.com/" target="_blank">Demo</a></p>
-							</div>
-							<div class="col-md-6 hackathon">
-								<img src="images/hack_carleton.png" class="sectionIcon" />
-								<p class="hackathonTitle">Carleton Hackathon (Winner) <br/> Network Visualization Tool - Martello Challenge</p>
-								<p class="hackathonDesc">A dynamic visualization tool using the Martello API that allows users to monitor their network including; viewing all devices connected to their network and identifying potential problems on the network.</p>
-								<p class="hackathonLink"><a href="https://github.com/jaxee/cuhacking-2017" target="_blank">Github</a> | <a href="https://devpost.com/software/network-visualization-tool" target="_blank">Devpost</a></p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 hackathon">
-								<img src="images/hack_mcgill.png" class="sectionIcon" />
-								<p class="hackathonTitle"> McMaster Hackathon <br/>Jukebot</p>
-								<p class="hackathonDesc">Juke Bot is a messenger chat bot that allows people to create collaborative playlists on the fly. We wanted to create something fun and social by bringing people together over music.</p>
-								<p class="hackathonLink"><a href="https://github.com/jaxee/jukebot" target="_blank">Github</a> | <a href="https://devpost.com/software/jukebot" target="_blank">Devpost</a></p>
-							</div>
-							<div class="col-md-6 hackathon">
-								<img src="images/hack_decode.png" class="sectionIcon" />
-								<p class="hackathonTitle">deCODE Ottawa 2016 <br/>
-								Fokmoji - Foko Challenge</p>
-								<p class="hackathonDesc">An application that gives the user the ability to overlay an emoji on a person’s face based on a person’s facial expression. You can use Fokmoji on the web, mobile (Android and iOS) and you can share your emojified picture on slack.</p>
-								<p class="hackathonLink"><a href="https://github.com/BenEmdon/emojis-as-a-service" target="_blank">Github</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="n_projects">
-				<h2> Recent Projects </h2>
-				<div class="row">
-					<div class="col-md-10 col-xs-offset-1">
-						<div class="row projects">
-							<div class="col-md-6 project">
-								<img src="images/perfit_logo.png" class="sectionIcon top" />
-								<p class="hackathonDesc"> PERFIT is a sizing and visualization tool for online shopping (under development) </p>
-								<p class="hackathonLink"><a id="perfitModal" href="#animatedModal2">Read More</a></p>
-							</div>
-							<div class="col-md-6 project">
-						    	<img src="images/bevy_logo.png" class="sectionIcon" />
-				    			
-								<p class="hackathonDesc">Bevy Band is a breathalyzer bracelet paired with an Android application </p>
-								<p class="hackathonLink"><a id="bevyModal" href="#animatedModal">Read More</a></p>
-							</div>
-						</div>
-						<div class="row projects">
-							<div class="col-md-6 project">
-								<img src="images/robro_logo.png" class="sectionIcon" />
-								<p class="hackathonDesc">RoBro is a wooden robot controlled by an Android app through Bluetooth </p>
-								<p class="hackathonLink"><a id="robroModal" href="#animatedModal3">Read More</a></p>
-							</div>
-							<div class="col-md-6 project">
-								<img src="images/turret_project_logo.png" class="sectionIcon" />
-								<p class="hackathonDesc">A miniature 3D version of the turret from the video game Portal </p>
-								<p class="hackathonLink"><a id="turretModal" href="#animatedModal4">Read More</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="n_contact">
-				<h2> I would love to hear from you! </h2>
-
-				<img src="images/email_me.png" />
-
-				<h4> jackie.ellis@hotmail.com </h4>
-				<p> I am currently looking for a full time position for May 2018</p>
-
-				<!-- <div class="row">
-	            	<div class="col-md-3"> </div>
-	                <div class="col-md-6">
-
-	                	<form method="post" name="contactform" class="contactF" action="send.php" onsubmit="alert('Thank you for your message. I will be in touch as soon as possible.')">
-	                		<p class="left"> * Name: </p>
-	                		<input type="text" name="yourName" required>
-
-	                		<br/>
-
-	                		<p class="left"> * Email: </p>
-	                		<input type="text" name="yourEmail"required>
-
-	                		<br/>
-
-	                		<p class="left"> Message: </p>
-	                		<textarea name="message" required> </textarea>
-
-	                		<br/> <br/>
-
-	                		<button type="submit" value="Submit" class="btn-blue"> Submit </button>
-								<button type="reset" value="Reset" class="btn-blue"> Reset </button>
-
-	                	</form>
-	                </div>
-	                <div class="col-md-3"> </div>
-			</div> -->
-			</section>
-
-			<div id="animatedModal">
-		        <div class="close-animatedModal"> 
-		            <a href="#"><img src="images/close.png" class="closeX" /></a>
-		        </div>
-		            
-		        <div class="modal-content">
-		        	<div class="row">
-		        		<div class="col-md-6 col-xs-offset-3">
-				        	<h2> Bevy Band </h2>
-				        	<h3 class="title"> Breathalyzer Bracelet </h3>
-
-							<img src="images/projects/bevyBand/logo.png" class="bevyLogo"/>
-
-							<div class="video-container"><iframe src="https://www.youtube.com/embed/FHYzN0zucWs" frameborder="0" allowfullscreen></iframe></div>
-
-							<h4> What is Bevy Band? </h4>
-
-							<p> Nearly 10,000 people die annually because of drunk drivers and over 2,000 people
-							die from alcohol poisoning in the US alone. Our product’s purpose is to decrease the amount
-							of drunk drivers and to act as a tool for increasing responsible drinking. Our intention is to allow
-							users to track their blood alcohol content (BAC) throughout their night. Users will also be able to
-							see their friends blood alcohol levels to help look out for one another. By having this interactivity
-							amongst a group, the intention is for your friends to look at your alcohol level and be able to alert
-							you when or before you’ve had too much to drink and vice versa. Our product will consist of a
-							wearable breathalyzer with an “At Glance” screen, and an Android Mobile Application where all information
-							will be viewed and stored.  </p>
-
-							<h4> How? </h4>
-							<p> The two components of Bevy Band are the breathalyzer bracelet and an Android phone to run the Bevy Band app. This is illustrated below. </p>
-							<img src="images/projects/bevyBand/How.png" class="bevyHow"/>
-
-							<p> The development tools included the following: </p>
-
-							<img src="images/projects/bevyBand/tools.png" class="bevyHow" />
-
-							<p> The Adruino IDE was used to develop the software on the bracelet that we build out of Arduino parts and an Arduino Mini Pro board. Android Studio was used to build the Android App that connected to the bracelet through Bluetooth. Lastly, Firebase was used as a development helper - mostly to be able to log in with Facebook and connect with friends. </p>
-
-							<h4> User Testing </h4>
-							<h5> Drinking Habit Survey </h5>
-							<p> The first user test was an online survey. We had 65 users respond and compiled the results which can be seen below: </p>
-
-							<img src="images/projects/bevyBand/surveyResults.png" class="bevyHow" />
-
-			 				<h5> Paper Prototype </h5>
-			 				<p> The second user test was a paper prototype to test the flow of user interaction with the app. This allowed us to refine the main interactions on the application and test our design. </p>
-			 
-			 				<img src="images/projects/bevyBand/paperPrototype.jpg" class="bevyHow" />
-
-			 				<h5> Medium Fidelity Prototype </h5>
-			 				<p> The next user test let us test the functionality of the application using an android device. A link to the medium fidelity prototype can be found below. It was made using InVision and let us find problem areas before creating the app. </p>
-
-			 				<a href="https://invis.io/NS67M51VZ" target="_blank" class="center"> Link to Medium Fidelity Prototype </a>
-
-							<h4> Final Product </h4>
-
-							<p> The video below shows the final product. We accomplished building a bracelet that is small and compact and we have the base functionality of the application working. This means communication between the bracelet and the application works as well as logging in with different Facebook profiles. There is still a lot of functionalities and design elements that we would like to improve and may continue working on this in the future. </p>
-
-							<div class="video-container"><iframe src="https://www.youtube.com/embed/GJrsFZVaOws" frameborder="0" allowfullscreen></iframe></div>
-
-							<h5> Bracelet </h5>
-							<p> The bracelet went through many iterations. The bracelet has the breathalyzer (gas sensor), a Bluetooth chip and an OLED screen The final bracelet is shown below: </p>
-
-							<img src="images/projects/bevyBand/bracelet.JPG" class="bevyHow" />
-
-							<h5> Application </h5>
-							<p> The app also went through many iterations. It does not match the original design because we focused on functionality with the time we had. We hope to improve the design and add the rest of the missing functionalities. The final app user profile is shown below: </p>
-
-							<img src="images/projects/bevyBand/app.JPG" class="bevyHow" />
-
-
-							<h4> Progress Website </h4>
-							<p> Throughout the development of the app and bracelet we tracked our progress using a wordpress website. Each week has a short update that explains what we were doing that week. </p>
-
-							<a href="http://www.thebevyband.wordpress.com" target="_blank"><img src="images/projects/bevyBand/devWebsite.JPG" class="bevyHow"/></a>
-
-							<a href="http://www.thebevyband.wordpress.com" target="_blank" class="center">http://www.thebevyband.wordpress.com</a>
-		        		</div>
-		        	</div>
+			<div class="mountain mountain-v1">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
 				</div>
 			</div>
 
-			<div id="animatedModal3">
-		        <div class="close-animatedModal3"> 
-		            <a href="#"><img src="images/close.png" class="closeX" /></a>
-		        </div>
-		            
-		        <div class="modal-content">
-		        	<div class="row">
-		        		<div class="col-md-6 col-xs-offset-3">
-			        		<h2> RoBro </h2>
+			<div class="mountain mountain-v1 mountain-v1--2">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<h3> Wooden Robot Controlled by an Android Application</h3>
+			<div class="mountain mountain-v2">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<img src="images/projects/roBro/logo.png" class="roBroLogo" />
+			<div class="mountain mountain-v2 mountain-v2--2">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<div class="video-container"><iframe src="https://www.youtube.com/embed/m90s3ve8MSg" class="roBroVid" frameborder="0" allowfullscreen></iframe></div>
+			<div class="mountain mountain-v3">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<h4> What is RoBro? </h4>
-							<p> RoBro is a robot controlled by an Android app through Bluetooth. RoBro is made out of wood, gears and arduino parts. RoBro's features include movement in all directions (forwards, backwards, left, right), an arm that has two joints, a claw that can open and close and a roaming feature controlled by a distance sensor. </p>
+			<div class="mountain mountain-v3 mountain-v3--2">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<h4> Process  </h4>
-							<p> This project was done for the Design Studio 1 class and we used the Scrum project management methodology to keep our group working towards one goal. </p>
+			<div class="mountain mountain-v4">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<h4> Final Product </h4>
+			<div class="mountain mountain-v4 mountain-v4--2">
+				<div class="mountain-top">
+					<div class="mountain-cap-1"></div>
+					<div class="mountain-cap-2"></div>
+					<div class="mountain-cap-3"></div>
+				</div>
+			</div>
 
-							<h5> <a href="https://myrobro.wordpress.com/" target="_blank" /> RoBro Development Website </a></h5>
+			<div class="home">
+				<img src="images/cabin.png" class="cabin" />
+				<img src="images/canada_flag.gif" class="flag" />
+			</div>
 
-							<img src="images/projects/roBro/robroFinalImage.jpg" class="roBroApp" />
-							<img src="images/projects/roBro/roBroFinal.jpg" class="roBroApp" />
-
-							<div class="row">
-								<div class="col-md-6">
-									<img src="images/projects/roBro/roBroFinal2.jpg" class="roBroApp" />
-								</div>
-								<div class="col-md-6">
-									<p> Our final touches on RoBro was adding break lights that light up when RoBro is not moving. The tools that we used to make RoBro are: </p>
-
-									<ul>
-										<li> Arduino </li>
-										<li> Processing </li>
-										<li> Lego Technic </li>
-										<li> Wood </li>
-									</ul>
-								</div>
-							</div>
-
-							<h4> Maker Faire 2015, 2016 & Future Plans </h4>
-							<p> RoBro was showcased at Maker Faire 2015 and 2016. Maker Faire is a diverse family-friendly showcase of makers, artists & organizations who create amazing things in celebration of the do-it-yourself spirit. We were sponsored by Carleton University to host a booth to show off RoBro.</p>
-
-							<img src="images/projects/roBro/makerFaire2.jpg" class="fullWidth" />
-							<p style="margin-top:10px"> We really enjoyed showing RoBro to all of the families and children that attended. From the reaction that we saw at Maker Faire - we have decided to continue working on RoBro. We would like to use RoBro to inspire children to explore S.T.E.M. </p>
-
-							<img src="images/projects/roBro/makerFaire.jpg" class="fullWidth" />
-			        	</div>
-		        	</div>
-		        </div>
-		    </div>
-
-		    <div id="animatedModal2">
-		        <div class="close-animatedModal2"> 
-		            <a href="#"><img src="images/close.png" class="closeX" /></a>
-		        </div>
-		            
-		        <div class="modal-content">
-		        	<div class="row">
-		        		<div class="col-md-6 col-xs-offset-3">
-		        			<h2> PERFIT </h2>
-		        			<h3> Online sizing and visualization tool for clothing</h3>
-		        			<img src="images/perfit_logo.png" class="perfitLogo" />
-
-		        			<h4> What is PERFIT? </h4>
-		        			<p> PERFIT is a fitting application and sizing tool for online shopping that uses body scanning to get accurate body measurements and shows the user the look and feel of the clothing based on the measurements. </p>
-
-		        			<p> PERFIT is currently under development and will be completed by April 2018. </p>
-
-		        			<h4> High Level Goals </h4>
-		        			<p> The following are the high level goals for PERFIT: </p>
-		        			<ol>
-		        				<li>Use technology to reduce the work the user has to do in current sizing solutions</li>
-		        				<li>Create an accurate body scanning system for the clothing size predictions</li>
-		        				<li>Build an aesthetically pleasing and intuitive interface that allows users to visualize clothing on their three-dimensional body </li>
-		        				<li>Ensure the technological solution is or will be accessible to most users </li>
-		        			</ol>
-
-		        			<h4> Features </h4>
-		        			<ul>
-		        				<li>The body scan will produce anthropomorphic body measurements that will allow us to shape a virtual 3D version of the user’s body</li>
-		        				<li>Using a series of pre-made 3D modeled bodies and the body scan information, free-form deformation will be used to morph the model to the body scan measurements</li>
-		        				<li>A custom shopping platform with clothing options will be built to show users how the plugin could be used on other online shopping websites</li>
-		        				<li>The application will recommend the most appropriate size of clothing to best fit the user based on the body measurements</li>
-		        				<li>The selected clothing will be draped over the model to better represent the clothing using physics</li>
-		        				<li>The user will see a visual representation of what the clothing looks like on their body</li> 
-		        			</ul>
-
-		        			<h4> Technologies </h4>
-		        			<h5> Hardware </h5>
-		        			<p> Kinect for Xbox One (V2) </p>
-
-		        			<h5> Software </h5>
-		        			<p class="underline"> 3D Tools </p>
-							<p> Autodesk Maya is being used for 3D modeling the human bodies </p>
-							<p> Marvelous Designer is being used to help with 3D clothing creation </p>
-
-							<p class="underline"> Design </p>
-							<p> Adobe Photoshop is being used for image assets wireframes and app design </p>
-							<p> Adobe Illustrator is being used for vector logos, assets </p>
-							<p> Adobe XD is being used for creating low fidelity prototype of the Windows PERFIT application </p>
-							<p> InVision is used for medium fidelity prototype </p>
-
-							<p class="underline"> Development </p>
-							<p> Unity is being used to bring everything together, such as the 3D human, FFD, clothing items, into a single ‘store’ interface </p>
-							<p> Obi Cloth is being used to power the physics behind our real-time cloth simulation </p>
-							<p> Visual Studio is being used as an integrated development environment to create the Windows App and to work with the Kinect V2 </p>
-
-		        			<h4> Pipeline </h4>
-		        			<p> The following is how the entire application works together: </p>
-		        			<img src="images/perfit_pipeline.png" class="fullWidth" />
-
-		        			<h4> Current Progress </h4>
-		        			<p> PERFIT is currently under development and will have a Beta version out in February 2018. </p>
-		        		</div>
-		        	</div>
-		        </div>
-		    </div>
-
-		    <div id="animatedModal4">
-		        <div class="close-animatedModal4"> 
-		            <a href="#"><img src="images/close.png" class="closeX" /></a>
-		        </div>
-		            
-		        <div class="modal-content">
-		        	<div class="row">
-		        		<div class="col-md-6 col-xs-offset-3">
-			        		<h2> Turret Project </h2>
-
-							<h3> Mini Interactive Portal Turret </h3>
-
-							<div class="video-container"><iframe class="portalVid" src="https://www.youtube.com/embed/zXmaC4M3HP4" allowfullscreen></iframe></div>
-
-							<h4> Final Product </h4>
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-4">
-										<img src="images/projects/turretProject/front.jpg" class="fullWidth"/>
-									</div>
-									<div class="col-md-4">
-										<img src="images/projects/turretProject/back.jpg" class="fullWidth"/>
-									</div>
-									<div class="col-md-4">
-										<img src="images/projects/turretProject/side.jpg" class="fullWidth"/>
-									</div>												
-								</div>
-							</div>
-
-							<h4> Concept & Prototype </h4>
-							<p> When coming up with a final project for our Sensor Based Interaction class, myself and 3 friends come up with the very broad idea of creating a Portal Turret. First we had to prototype and below are some of our primary ideas. </p>
-
-							<p> Our first prototype was build using a wooden frame, two motors hooked up to an Arduino and motion tracking (body and face) using the Kinect. </p>
-
-							<img src="images/projects/turretProject/prototype.JPG" class="fullWidth mrgn-lrg" />
-							<img src="images/projects/turretProject/prototypeSketch.JPG" class="fullWidth mrgn-lrg" />
-
-							<p> This is how we planned to move the chassis (inside of the turret) and how we would accomplish horizontal and vertical movements </p>
-
-							<img src="images/projects/turretProject/mechanicalParts.JPG" class="fullWidth mrgn-lrg" />
-							<img src="images/projects/turretProject/mechanicalParts3.JPG" class="fullWidth mrgn-lrg" />
-
-							<p> With the Kinect we used the infared camera to track the head and chest of a person </p>
-
-							<img src="images/projects/turretProject/prototypeTracking.JPG" class="fullWidth mrgn-lrg" /> 
-
-							<h4> Features </h4>
-
-							<p> Below are the features that we completed for the project: </p>
-
-							<img src="images/projects/turretProject/features.JPG" class="fullWidth mrgn-lrg" />
-							<img src="images/projects/turretProject/features2.JPG" class="fullWidth mrgn-lrg" />
-							<img src="images/projects/turretProject/features4.JPG" class="fullWidth mrgn-lrg" />
-							<img src="images/projects/turretProject/features3.JPG" class="fullWidth mrgn-lrg" />
-
-							<h4> Tools </h4>
-
-							<p> The main tools that we decided to use to make the turret include the following: </p>
-
-							<ul> 
-								<li> Webcam </li>
-								<li> Cinder Library (Visual Studio) </li>
-								<li> Arduino (servo motors and lights) </li>
-								<li> Lego Technic parts </li>		
-								<li> 3D Printed Shell </li>										
-							</ul>
-			        	</div>
-		        	</div>
-		        </div>
-		    </div>
-	    </div>
-
-	    <script src="scripts/animatedModal.js"></script>
-		<script src="scripts/modalControl.js"></script>
-		<script src="scripts/aboutMeChart.js"></script>
-	</body>
+    </div>
+  </body>
 </html>
