@@ -106,7 +106,7 @@
   display: block; }
 
 .stars {
-  background: url(images/stars.png) repeat top center;
+  background: url(images/stars.png) repeat top;
   z-index: 0;
   animation: pulsate 6s ease;
   transform: translateX(-400px); }
@@ -141,10 +141,22 @@
 @font-face {
   font-family: ostrich;
   src: url(fonts/OstrichSans-Bold.otf); }
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#534b7e, #62719c, #97bdd4) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   font-family: cicle; }
 
@@ -167,13 +179,9 @@ p {
   font-size: 17px; }
 
 .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(#534b7e, #62719c, #97bdd4);
-  z-index: -100; }
+  z-index: -100;
+  height: 100vh;
+  width: 100vw; }
 
 .black-overlay {
   width: 400px;

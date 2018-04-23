@@ -9,7 +9,7 @@
 }
 
 .stars{
-  background: url(images/stars.png) repeat top center;
+  background: url(images/stars.png) repeat top;
   z-index: 0;
   animation: pulsate 6s ease;
   transform: translateX(-400px);
