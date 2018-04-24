@@ -12,10 +12,10 @@ $m4-top: #bca1bd;
 
 .mountain {
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
+	z-index: 1;
 	border-left: 250px solid transparent;
 	border-right: 250px solid transparent;
-	z-index: 1;
 
 	.mountain-top {
 	    position: absolute;

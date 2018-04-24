@@ -1,4 +1,4 @@
-.stars, .twinkling {
+.stars {
   position: absolute;
   top:0;
   right:0;
@@ -8,7 +8,7 @@
   display: block;
 }
 
-.stars{
+.stars {
   background: url(images/stars.png) repeat top;
   z-index: 0;
   animation: pulsate 6s ease;
