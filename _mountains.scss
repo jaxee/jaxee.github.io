@@ -27,7 +27,7 @@ $m4-top: #bca1bd;
 
     .mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
 	    position: absolute;
-	    top: 110px;
+	    top: 112px;
 	    border-left: 35px solid transparent;
 	    border-right: 35px solid transparent;
 	}
@@ -40,7 +40,7 @@ $m4-top: #bca1bd;
 		border-bottom: 280px solid $m-base;
 	
 		.mountain-top {
-			border-bottom: 110px solid $m-top;
+			border-bottom: 112px solid $m-top;
 		}
 
 		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
@@ -78,16 +78,16 @@ $m4-top: #bca1bd;
 	}
 
 	&.mountain-v3 {
-		border-bottom: 310px solid $m3-base;
+		border-bottom: 308px solid $m3-base;
 		left: 350px;
 		z-index: -1;
 
 		.mountain-top {
-	    	border-bottom: 120px solid $m3-top;
+	    	border-bottom: 123px solid $m3-top;
 		}
 
 		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
-			top: 120px;
+			top: 123px;
 			border-top: 35px solid $m3-top;
 		}
 	}
@@ -100,16 +100,16 @@ $m4-top: #bca1bd;
 	}
 
 	&.mountain-v4 {
-		border-bottom: 260px solid $m4-base;
+		border-bottom: 261px solid $m4-base;
 		left: 1050px;
 		z-index: 2;
 
 		.mountain-top {
-	    	border-bottom: 105px solid $m4-top;
+	    	border-bottom: 104px solid $m4-top;
 		}
 
 		.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
-			top: 105px;
+			top: 104px;
 			border-top: 35px solid $m4-top;
 		}
 	}
