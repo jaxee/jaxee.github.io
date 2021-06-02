@@ -1,24 +1,12 @@
-@font-face {
-  font-family: cicle;
-  src: url(fonts/Cicle-Fina.ttf);
-}
-
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: linear-gradient(#534b7e, #62719c, #97bdd4) no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .App {
-  text-align: center;
-  font-family: cicle;
-  font-size: 30px;
+  padding: 40px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
