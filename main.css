@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Blockletter';
+  src: url("fonts/Blockletter.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GeosansLight';
+  src: url("fonts/GeosansLight.ttf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: #1195D9;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+.heading {
+  background-color: #010626;
+  color: #F4F7F0;
+  font-family: 'Blockletter';
+  font-size: 100px;
+  padding: 75px 0px 0px 15px;
+  margin: 0px;
+}
+
+.heading-text {
+  display: inline;
+}
+
+.content {
+  font-family: 'GeosansLight';
+  font-size: 20px;
+  color: #F4F7F0;
+  padding: 15px 0px 0px 25px;
+}
+
+.footer {
+  font-family: 'GeosansLight';
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #F4F7F0;
+  text-align: right;
+}
+
+a {
+  color: #F4F7F0;
+}
